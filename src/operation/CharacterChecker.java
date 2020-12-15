@@ -1,6 +1,8 @@
+package operation;
+
 import java.util.Scanner;
 
-public class CharChecker {
+public class CharacterChecker {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -9,15 +11,14 @@ public class CharChecker {
         String input = scanner.next();
 
         char ch = input.charAt(0);
-        if (ch > 'a' && ch < 'z') {
+        if (Character.isLowerCase(ch)) {
             System.out.println(ch + " is a lowercase letter.");
             System.out.println("=> to uppercase letter: " + Character.toUpperCase(ch));
-        } else if (ch > 'A' && ch < 'Z') {
+        } else if (Character.isUpperCase(ch)) {
             System.out.println(ch + " is a uppercase letter.");
             System.out.println("=> to lowercase letter: " + Character.toLowerCase(ch));
-        } else if (ch > '0' && ch < '9') {
+        } else if (Character.isDigit(ch)) {
             System.out.println(ch + " is a digit number.");
         }
     }
-
 }

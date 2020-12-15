@@ -1,3 +1,5 @@
+package decision;
+
 import java.util.Scanner;
 
 public class HiFive {
@@ -9,7 +11,7 @@ public class HiFive {
 
         // if-then
         if (number % 5 == 0)
-            System.out.println("HiFive.");
+            System.out.println("decision.HiFive.");
 
         if (number % 2 == 0)
             System.out.println("HiEven.");
