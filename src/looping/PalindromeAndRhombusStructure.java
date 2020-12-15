@@ -2,7 +2,7 @@ package looping;
 
 import java.util.Scanner;
 
-class SimplePalindromeNumber2 {
+class PalindromeAndRhombusStructure {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
